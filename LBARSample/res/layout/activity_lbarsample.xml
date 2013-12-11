@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/parentscreen"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <org.opencv.android.NativeCameraView
+        android:id="@+id/tutorial1_activity_native_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        opencv:camera_id="any"
+        opencv:show_fps="true" />
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:visibility="visible" >
+        
+         <Button
+        android:id="@+id/buttonPlusx"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="19dp"
+        android:onClick="rotateXPoisitive"
+        android:text="+" />
+         
+           
+
+    <Button
+        android:id="@+id/buttonMinusX"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPlusx"
+        android:layout_alignParentRight="true"
+          android:onClick="rotateXNegative"
+        android:text="-" />
+           <Button
+        android:id="@+id/buttonPlusY"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:onClick="rotateYPositive"
+        android:layout_below="@+id/buttonMinusX"
+        android:layout_alignParentRight="true"
+        android:text="Y:+" />
+
+    <Button
+        android:id="@+id/buttonMinusY"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_below="@+id/buttonPlusY"
+          android:onClick="rotateYNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Y -" />
+    
+      <Button
+        android:id="@+id/buttonPlusZ"
+        style="?android:attr/buttonStyleSmall"
+         android:onClick="rotateZPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonMinusY"
+        android:layout_alignParentRight="true"
+        android:text="Z:+" />
+
+    <Button
+        android:id="@+id/buttonMinusZ"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+          android:onClick="rotateZNegative"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/buttonPlusZ"
+         android:layout_alignParentRight="true"
+        android:text="Z -" />
+    
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/metaioframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:onClick="onButtonClick"
+            android:src="@drawable/cancel"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:background="@color/red"
+             />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/red" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:background="#66FF0000"
+            android:visibility="gone"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+    </FrameLayout>
+
+</FrameLayout>

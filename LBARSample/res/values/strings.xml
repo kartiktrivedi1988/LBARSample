@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LBARSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- <string name="metaioSDKSignature">tA6dxf/2TLNCAf8Fiur+gPd0/+uXa/I10hJYCro+OXY=</string> -->
+    <string name="metaioSDKSignature">YSsj6mwGmk5KoT2FYWTv7bbarZFXxCjZoA3uAQ28zcA=</string>
+    <string name="title_activity_view_moving_sample">ViewMovingSampleActivity</string>
+    <string name="title_activity_open_cv">OpenCVActivity</string>
+    <string name="title_activity_high_score_table">HighScoreTableActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+</resources>

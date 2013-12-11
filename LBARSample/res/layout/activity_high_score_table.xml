@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/red"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:text="Wochen-Highscore"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:weightSum="0.8"
+    android:layout_weight="1"
+    android:orientation="horizontal" >
+    <Button
+        android:layout_width="0dp"
+        android:id="@+id/previeousBtn"
+        android:layout_height="wrap_content" 
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:text="left"
+        />
+    
+    <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.6"
+    android:weightSum="1"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:text="13-19"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Januar"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="Treffer"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:text="Ball"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="Punkte"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+     <!--
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:weightSum="100"
+         > 
+         <Button
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="10" 
+             android:text="left"
+             android:layout_gravity="center"
+             />
+
+   <ListView
+                android:id="@+id/listview"
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="match_parent" />
+    <Button
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="10" 
+               android:layout_gravity="center"
+             android:text="Right"
+             />
+   
+   </LinearLayout>
+     -->
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bottomRow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:text="79"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Felix 23"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="13"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:text="02"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="9.543"
+            android:textSize="20dp" />
+    </LinearLayout>
+ 
+</LinearLayout>
+<Button
+      android:id="@+id/nextBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" 
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:text="Right"
+        />
+ </LinearLayout>
+ </LinearLayout>
